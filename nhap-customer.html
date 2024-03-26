@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhap thong tin benh nhan</title>
+    <link rel="stylesheet" href="assets/css/nhap-customer.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <header>Nhập thông tin bệnh nhân<i class="bx bx-id-card"></i></header>
+      <form action="#" class="form">
+        <div class="column">
+          <div class="input-box">
+            <label for="">Họ và tên</label>
+            <input type="text" placeholder="Nguyễn Văn A" required />
+          </div>
+          <div class="input-box">
+            <label for="">Ngày Sinh</label>
+            <input type="date" placeholder="Nguyễn Văn A" required />
+          </div>
+        </div>
+        <div class="gender">
+          <h2>Giới tính</h2>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" />
+              <label for="check-male">Nam</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Nữ</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">Khác</label>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label for="">CCCD</label>
+            <input type="text" required />
+          </div>
+          <div class="input-box">
+            <label for="">Ngày cấp</label>
+            <input type="text" required />
+          </div>
+          <div class="input-box">
+            <label for="">Nơi cấp</label>
+            <input type="text" required />
+          </div>
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label for="">SĐT</label>
+            <input type="text" required />
+          </div>
+          <div class="input-box">
+            <label for="">Email</label>
+            <input type="text" required />
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="">Địa chỉ nhà</label>
+          <input
+            type="text"
+            placeholder="000 Khu phố Einstein tuyệt vời"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <label for="">Bệnh đã được chẩn đoán</label>
+          <input type="text" placeholder="Bệnh cảm" required />
+        </div>
+        <div class="input-box">
+          <label for="">Ngày nhập viện (Nếu có)</label>
+          <input type="text" placeholder="5/12/9999" />
+        </div>
+        <div class="input-box">
+          <label for="">Phòng nhập viện</label>
+          <input type="text" placeholder="H1-401" />
+        </div>
+        <button>Xác nhận</button>
+      </form>
+    </section>
+  </body>
+</html>
