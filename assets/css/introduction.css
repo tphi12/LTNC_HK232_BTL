@@ -1,0 +1,203 @@
+/* section2 */
+.intro-section {
+    background: url("images/medicine.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0.7; 
+}
+
+.header-section {
+    text-align: center; /* aligns the text to the center */
+    color: white; /* adjusts text color */
+}
+
+.header-section h1 {
+    font-size: 36px; /* adjust size as needed */
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs {
+    margin-top: 10px; /* space above breadcrumbs */
+}
+
+.breadcrumbs a,
+.breadcrumbs span {
+    color: white; /* breadcrumb text color */
+    text-decoration: none; /* removes underline from links */
+    font-size: 18px; /* adjust size as needed */
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline; 
+    color: blue;
+}
+/* section2 */
+
+/* section3 */
+.testimonials-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background: url("images/medicine.jpg");
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.testimonials-section::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+}
+.slider{
+  overflow: hidden;
+  width: 50%;
+  margin: 0 auto;
+}
+.wrap-testimonials{
+    align-items: center;
+    display: flex;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+  .intro{
+    text-align: center;
+    color: #73D0F4;
+    margin-top: 100px;
+    position: relative;
+  }
+  .testimonial {
+    text-align: center;
+    position: relative;
+    flex: 1 0 100%;
+    object-fit: cover;
+    scroll-snap-align: start;
+  }
+  
+  .testimonial-image {
+    margin-top: 20px;
+    border-radius: 50%; 
+    width: 100px;
+    height: 100px;
+  }
+  
+  .testimonial-text {
+    width: 100%;
+    font-style: italic;
+    margin-top: 20px;
+    font-size: 19px;
+    position: relative;
+    color: #ffff;
+  }
+  
+  .testimonial-name {
+    width: 100%;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 23px;
+    color: #ffff;
+    margin-bottom: 50px;
+  }
+  .label-slider{
+    display: flex;
+    justify-content: center;
+    /* transform: translatex(-50%); */
+  }
+  .label-slider a{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 3px solid grey;
+    position: relative;
+    margin-bottom: 100px;
+    margin-top: -30px;
+    margin-left: 10px;
+  }
+  .label-slider a:hover{
+    background: white;
+    position: relative;
+  }
+  
+
+  #scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+  
+  #scrollbar {
+    -ms-overflow-style: none;  /* IE và Edge */
+    scrollbar-width: none;  /* Firefox */
+    overflow-x: scroll;
+  }
+/* section3 */
+
+/* section4 */
+.team-section{
+  margin: 5% 10% 5% 10%;
+    
+}
+.team-section h2{
+  font-weight: bold;
+  font-size: 35px;
+  color: #135c8d;
+}
+
+.team-section p{
+  margin-right: 40%;
+  font-weight: 600;
+  font-size: 20px;
+  color: #2d78a9;
+}
+
+.wrap-doctor{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  
+}
+
+.doctor-card{
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px 30px 15px;
+  align-items: center;
+  margin-top: 40px;
+}
+.doctor-card img{
+  width: 80%;
+  border-radius: 2%;
+  
+}
+.doctor-name{
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #135c8d;
+}
+
+.doctor-specialty{
+  font-weight: 400;
+  font-size: 15px;
+  color: #135c8d;
+}
+/* section4 */

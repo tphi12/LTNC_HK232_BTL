@@ -181,7 +181,7 @@
 }
 
 .section-3::before {
-    content: "dsadasdasdasd";
+    content: "";
     background-color: rgba(0, 0, 0, 0.7);
     position: absolute;
     width: 100%;
