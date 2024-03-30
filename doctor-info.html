@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nhập thông tin bác sĩ</title>
+    <link rel="stylesheet" href="assets/css/doctor-info.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <header>Nhập thông tin bác sĩ<i class="bx bx-id-card"></i></header>
+      <form action="#" class="form">
+        <div class="column">
+          <div class="input-box">
+            <label for="">Họ và tên</label>
+            <input type="text" placeholder="Nguyễn Văn A" required />
+          </div>
+          <div class="input-box">
+            <label for="">Ngày Sinh</label>
+            <input type="date" required />
+          </div>
+        </div>
+        <fieldset class="gender">
+          <legend>Giới tính</legend>
+          <div class="gender-option">
+            <div class="gender">
+              <input type="radio" id="check-male" name="gender" />
+              <label for="check-male">Nam</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-female" name="gender" />
+              <label for="check-female">Nữ</label>
+            </div>
+            <div class="gender">
+              <input type="radio" id="check-other" name="gender" />
+              <label for="check-other">Khác</label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="column">
+          <div class="input-box">
+            <label for="">CCCD</label>
+            <input type="number" required />
+          </div>
+          <div class="input-box">
+            <label for="">Ngày cấp</label>
+            <input type="date" required />
+          </div>
+          <div class="input-box">
+            <label for="">Nơi cấp</label>
+            <input type="text" required />
+          </div>
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label for="">SĐT</label>
+            <input type="password" required />
+          </div>
+          <div class="input-box">
+            <label for="">Email</label>
+            <input type="email" required />
+          </div>
+        </div>
+        <div class="input-box">
+          <label for="">Địa chỉ cư trú</label>
+          <input
+            type="text"
+            placeholder="000 Khu phố Einstein tuyệt vời"
+            required
+          />
+        </div>
+        <div class="input-box">
+          <label for="">Học vị</label>
+          <select>
+              <option>(chọn bằng)</option>
+              <option>Thạc sĩ</option>
+              <option>Tiến sĩ</option>
+              <option>Tiến sĩ khoa học</option>
+          </select>
+        </div>
+        <div class="input-box">
+          <label for="">Ảnh chụp bằng cấp</label>
+          <input type="file" required />
+        </div>
+        <div class="input-box">
+          <label for="">Ngày cấp bằng</label>
+          <input type="date" placeholder="5/12/9999" />
+        </div>
+        <div class="input-box">
+          <label for="">Hạn bằng</label>
+          <input type="date" placeholder="5/12/9999" />
+        </div>
+        <button>Xác nhận</button>
+      </form>
+    </section>
+  </body>
+</html>
