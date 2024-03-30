@@ -1,0 +1,110 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-size:large;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(130, 106, 251);
+    padding: 0 20px;
+}
+.container {
+
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow:  0 0 15px rgba(0, 0, 0, 0.1);
+}
+.container header {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-weight: 900;
+    font-size: 20px;
+}
+.container header i {
+    padding-left: 2rem;
+    text-align: end;
+    font-size: xx-large;
+}
+.container form {
+
+    margin-top: 30px;
+}
+.form .input-box {
+
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form .input-box input, select {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #707070;
+}
+
+::-webkit-file-upload-button {
+    height: 50px;
+    width: 20%;
+    border: none;
+}
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+.form .gender {
+    margin-top: 20px;
+}
+.gender h2 {
+    font-size: 1rem;
+    font-weight: 100;
+}
+.form .gender-option {
+display: flex;
+align-items: center;
+column-gap: 100px;
+cursor: pointer;
+
+}
+.form button {
+    height: 40px;
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    border-radius: 6px;
+    border-color: gray;
+    text-align: center;
+    margin-top: 2rem;
+    transition: all 0.2s ease;
+    background-color: rgb(46, 167, 46);
+    border: white solid;
+}
+.gender input {
+    accent-color: green;
+}
+.form button:hover {
+    background-color: greenyellow;
+}
+@media screen and (max-width:500px) {
+    .form .column {
+        flex-wrap: wrap;
+    }
+}
