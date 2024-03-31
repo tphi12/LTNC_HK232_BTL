@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhập thông tin Y Tá </title>
+    <link rel ="stylesheet" href="nhap-nurse.css"/>
+</head>
+<body>
+    <section class = "container">
+        <header>Nhập thông tin y tá </header>
+        <form action ="#" class = "form" >
+            <div class ="input-box">
+                <label> Họ và Tên</label>
+                <input type ="text" placeholder ="Nguyễn Văn A" required/>
+            </div>
+
+            <div class ="input-box">
+                <label> CCCD</label>
+                <input type ="text" placeholder ="040204002390" required/>
+            </div>
+
+            <div class="column">
+                <div class ="input-box">
+                    <label> Ngày sinh</label>
+                    <input type ="date" placeholder ="..." required/>
+                </div>
+
+                <div class ="input-box">
+                    <label> Thường trú</label>
+                    <input type ="text" placeholder ="Vinh, Nghệ An" required/>
+                </div>
+            </div>
+            <div class="gender-box">
+                <h3> Giới tính</h3>
+                <div class="gender-option">
+                    <div class="gender">
+                        <input type ="radio" id ="check-nam" name ="gender" checked/>
+                        <label for ="check-nam">Nam</label>
+                    </div>
+                    <div class="gender">
+                        <input type ="radio" id ="check-nu" name ="gender"/>
+                        <label for ="check-nu">Nữ</label>
+                    </div> 
+                    <div class="gender">
+                        <input type ="radio" id ="check-khac" name ="gender"/>
+                        <label for ="check-khac">Khác</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class ="input-box bangcap">
+                <label> Bằng cấp</label>
+                <div class="column">
+                    <div class="select-box">
+                        <select>
+                        <option hidden>Chọn</option>
+                        <option>Cao đẳng</option>
+                        <option>Cử nhân</option>
+                        <option>Thạc sĩ</option>
+                        <option>Tiến sĩ</option>
+                    </select>
+                    </div>
+                    <div >
+                        <input type ="date" placeholder ="Ngày cấp" />
+                    </div>
+                </div>
+            </div>
+            <button>XÁC NHẬN</button>
+        </form>
+    </section>
+</body>
+</html>
